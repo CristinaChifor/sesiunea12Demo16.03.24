@@ -52,6 +52,11 @@ const obj3= obj1; // obj1 si obj3 au aceeasi ref
 console.log(`obj1 === obj2 => ${obj1 === obj2}`); // retureneza false deoarece desi au aceleasi valori au instante diferite/ adrese dif in memoria calculatorului
 console.log(`obj1 === obj3 => ${obj1 === obj3}`); // returneaza true deoarece au aceeasi instanta, se salveaza aceeasi adresa; doua copii ale aceleasi adrese.
 
+// comparare dupa proprietati
+
+const areEqual = obj1.a === obj2.a && obj2.b === obj3.b;
+console.log(`areEqual: `, areEqual);
+
 // Date Object
 // Obiectul Date în JavaScript este folosit pentru a lucra cu date și ore în aplicații web. Acest obiect oferă metode pentru a accesa și manipula data și ora, precum și pentru a efectua operații cu date specifice
 
