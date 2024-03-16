@@ -98,3 +98,23 @@ console.log(`minutes: `, date.getMinutes());
 // accesare secunde
 
 console.log(`seconds: `, date.getSeconds());
+
+// Componentele datei și orei pot fi modificate utilizând metodele adecvate:
+
+//let currentDate = new Date();
+// currentDate.setFullYear(2023);
+//console.log(`setare luna: `, currentDate.setMonth(6));
+
+// JavaScript Date - Operații
+
+//let currentDate = new Date();
+//console.log(currentDate.setDate(currentDate.getDate() + 5));
+// Obiectul Date nu oferă o metodă directă pentru a formata data, dar se pot utiliza metodele sale pentru a obține componente și apoi se pot concatena sau utiliza librării terțe pentru formatare.
+
+// JavaScript Date - Timestamps
+// Timestamp-ul reprezintă numărul de milisecunde de la 1 ianuarie 1970 UTC (Epoch). Aceasta este o modalitate comună de a reprezenta date în programare.
+
+let currentDate = new Date();
+
+let timeStamp = currentDate.getTime();
+console.log(`currentDate: `, timeStamp);
