@@ -65,4 +65,36 @@ console.log(`person: `, person);
 // Date Object
 // Obiectul Date în JavaScript este folosit pentru a lucra cu date și ore în aplicații web. Acest obiect oferă metode pentru a accesa și manipula data și ora, precum și pentru a efectua operații cu date specifice
 
+const date = new Date();
+console.log(`date: `, date);
 
+let specificDate = new Date('2022-01-28');
+console.log(`date: `, specificDate);
+
+// Metode ale Obiectului Date
+// Metodele obiectului Date permit accesarea diferitelor componente ale datei și orei:
+
+// accesare an
+
+console.log(`year: `, date.getFullYear());
+
+// acesare luna
+const months = ['Ianuarie', 'Februarie', 'Martie', "Aprilie"];
+const currentMonthIndex = date.getMonth();
+console.log(`month: `, months[currentMonthIndex]);
+
+// accesare zi a lunii
+
+console.log(`day of the month: `, date.getDate());
+
+// accesare ora
+
+console.log(` hours: `, date.getHours());
+
+// accesare minute
+
+console.log(`minutes: `, date.getMinutes());
+
+// accesare secunde
+
+console.log(`seconds: `, date.getSeconds());
