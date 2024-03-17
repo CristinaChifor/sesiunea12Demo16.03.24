@@ -170,6 +170,33 @@ let  times = 10;
  for (const property in myCar) {
     console.log(`${property} are valoarea ${myCar[property]}`);   
  }
- 
+
+
+ // break 
+ // se utilizeaza pentru a întrerupe execuția unei bucle sau a unei instrucțiuni de switch atunci când o anumită condiție este îndeplinită.
+
+ const numbers3 = [1, 2, 3, 4, 5, 6];
+ const numberToFind= 4;
+let isNumberInArray = false;
+
+for (const num of numbers3) {
+    console.log(num);
+    if(numberToFind === num) {
+        isNumberInArray = true;
+        break;
+    }   
+}
+
+console.log(`${numberToFind} este in array: ${isNumberInArray}`);
+
+// continue
+// Instrucțiunea continue este folosită pentru a sări la următoarea iterație a unei bucle, ignorând restul codului din blocul de buclă pentru iterația curentă.                                                        
+
+for (const num of numbers3) {
+    if(num % 2 > 0) {
+        continue;
+    }
+    console.log(`numarul ${num} este par iar dublul lui este ${num *2}`);
+}
 
 
