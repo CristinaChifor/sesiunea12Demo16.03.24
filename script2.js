@@ -70,7 +70,7 @@ if (number > 0) {
 // Switch
 // Este utilizat atunci când trebuie să se compare o valoare cu mai multe posibilități.
 
-const dayOfTheWeek = 9;
+const dayOfTheWeek = 3;
 
 switch (dayOfTheWeek) {
     case 1:
@@ -79,7 +79,41 @@ switch (dayOfTheWeek) {
     case 2:
         console.log(`Ziua saptamanii este Marti`);
         break;
+    case 3:
+        console.log(`Ziua saptamanii este Miercuri`);
+        break;
         default:
             console.log(`Nu stiu ce zi a saptamanii este aceasta`);
         break;
 }
+
+// Loops
+// Buclele sau instrucțiunile repetitive sunt structuri de control care permit executarea repetitivă a unui bloc de cod. Acestea sunt folosite pentru a automatiza sarcini repetitive sau pentru a parcurge iterativ valori din colecții de date (array, object, etc).
+// Principalele bucle folosite in JavaScript sunt:
+// while;
+// do…while;
+// for;
+// for…of…;
+// for…in…;
+
+// While 
+// Este o structura de control repetitiva ce permite executarea unui bloc de cod atat timp cat o anumită condiție sau expresie este adevărată.
+
+const numbers = [2, 99, 34, 25, 1, -23];
+
+let smallestNumber = Number.MAX_SAFE_INTEGER;
+let currentIndex = 0;
+
+while (currentIndex < numbers.length) {
+    if (numbers[currentIndex] < smallestNumber) {
+        smallestNumber = numbers[currentIndex];
+    }
+
+    currentIndex++;
+}
+
+console.log(`cel mai mic numar din lista este: `, smallestNumber);
+
+// do while
+// Este o structura de control repetitiva ce permite executarea unui bloc de cod atat timp cat o anumită condiție sau expresie este adevărată. Blocul de cod se executa cel puțin odata indiferent de valoarea condiției
+
