@@ -141,3 +141,20 @@ let  times = 10;
  }
 
  console.log(`cel mai mic numar din lista este: `, smallestNr);
+
+ // for of
+ // Este o structura de control repetitiva ce permite executarea unui bloc de cod pentru fiecare valoare dintr-o colecție. 
+
+ const numbers2 = [22, 11, 91, 7, 33];
+
+ let min = numbers2[0];
+
+ for (const num of numbers2) {
+    if(num < min) {
+        min = num;
+    }
+ }
+
+ console.log(`Cel mai mic numar din array numbers2 este: `, min);
+
+ 
