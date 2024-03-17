@@ -157,4 +157,19 @@ let  times = 10;
 
  console.log(`Cel mai mic numar din array numbers2 este: `, min);
 
+ // for in
+ // Este o structura de control repetitiva  concepută special pentru a parcurge proprietățile unui obiect.
+ // Executa un bloc de cod pentru fiecare proprietate.
+
+ const myCar = {
+    brand: "Volvo",
+    model: "XC90",
+    manufactureYear: 2012
+ };
+
+ for (const property in myCar) {
+    console.log(`${property} are valoarea ${myCar[property]}`);   
+ }
  
+
+
