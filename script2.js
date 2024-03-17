@@ -123,3 +123,21 @@ do {
     num++;
     console.log(num);
 } while (num < n);
+
+// for
+// Este o structura de control repetitiva ce permite executarea unui bloc de cod de un număr finit de ori. 
+
+let  times = 10;
+ for (let i = 0; i < 10; i++) {
+    console.log(`Hello ${i}`);
+ }
+
+ let smallestNr = Number.MAX_SAFE_INTEGER;
+ 
+ for (let i = 0; i < numbers.lenght; i++) {
+    if (numbers[i] < smallestNr) {
+        smallestNr = numbers[i];
+    }
+ }
+
+ console.log(`cel mai mic numar din lista este: `, smallestNr);
