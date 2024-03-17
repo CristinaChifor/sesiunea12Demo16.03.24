@@ -117,3 +117,9 @@ console.log(`cel mai mic numar din lista este: `, smallestNumber);
 // do while
 // Este o structura de control repetitiva ce permite executarea unui bloc de cod atat timp cat o anumită condiție sau expresie este adevărată. Blocul de cod se executa cel puțin odata indiferent de valoarea condiției
 
+let n = 10;
+let num = 0;
+do {
+    num++;
+    console.log(num);
+} while (num < n);
